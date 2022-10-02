@@ -6,7 +6,8 @@ const cors = require("cors");
 const app = express();
 
 // public directory
-app.use(express.static(path.join(__dirname, 'public')));
+// DECOMMENT:
+// app.use(express.static(path.join(__dirname, 'public')));
 
 var corsOptions = {
   origin: "*"
