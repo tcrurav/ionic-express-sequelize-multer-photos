@@ -4,7 +4,6 @@ const Op = db.Sequelize.Op;
 
 // Create and Save a new Bicycle
 exports.create = (req, res) => {
-  console.log("Llegó al create")
   // Validate request
   if (!req.body.brand || !req.body.model){
     res.status(400).send({
@@ -16,7 +15,7 @@ exports.create = (req, res) => {
   const bicycle = {
     brand: req.body.brand,
     model: req.body.model,
-    filename: req.file ? req.file.filename : ""
+    // DECOMMENT: filename: req.file ? req.file.filename : ""
   }
 
   // Save Bicycle in the database

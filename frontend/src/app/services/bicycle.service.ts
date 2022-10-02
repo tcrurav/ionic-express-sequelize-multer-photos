@@ -14,12 +14,13 @@ export class BicycleService {
     return this.httpClient.get(this.endPoint);
   }
 
-  createBicycle(bicycle, blob){
-    let formData = new FormData();
-    formData.append("brand", bicycle.brand);
-    formData.append("model", bicycle.model);
-    formData.append("file", blob);
+  // DECOMMENT:
+  // createBicycle(bicycle, blob){
+  //   let formData = new FormData();
+  //   formData.append("brand", bicycle.brand);
+  //   formData.append("model", bicycle.model);
+  //   formData.append("file", blob);
 
-    return this.httpClient.post(this.endPoint, formData);
-  }
+  //   return this.httpClient.post(this.endPoint, formData);
+  // }
 }
