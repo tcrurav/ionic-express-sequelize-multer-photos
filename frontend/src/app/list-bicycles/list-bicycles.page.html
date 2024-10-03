@@ -1,11 +1,17 @@
-<ion-header>
+<ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>Bicycle List</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-list>
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Bicycle List</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-list></ion-list>
     <ion-item *ngFor="let b of bicycles">
       <!-- DECOMMENT: -->
       <!-- <ion-avatar slot="start">

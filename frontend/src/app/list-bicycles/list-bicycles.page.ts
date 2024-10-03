@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 import { BicycleService } from '../services/bicycle.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-list-bicycles',
@@ -13,7 +13,8 @@ export class ListBicyclesPage implements OnInit {
 
   constructor(private bicycleService: BicycleService, private router: Router) { }
 
-  ngOnInit() { }
+  ngOnInit() {
+  }
 
   ionViewDidEnter(){
     this.getAllBicycles();

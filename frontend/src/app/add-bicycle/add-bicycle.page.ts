@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
 import { BicycleService } from '../services/bicycle.service';
 import { PhotoService } from '../services/photo.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-add-bicycle',
@@ -76,4 +76,5 @@ export class AddBicyclePage implements OnInit {
     //   })
     // }
   }
+
 }
