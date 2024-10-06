@@ -20,7 +20,7 @@ export class PhotoService {
   }
 
   public async pickImage(): Promise<GalleryPhoto> {
-    // Take a photo
+    // Pick an image
     const capturedPhotos = await Camera.pickImages({
       limit: 1,
       quality: 100
