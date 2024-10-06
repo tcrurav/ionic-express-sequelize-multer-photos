@@ -7,9 +7,9 @@ module.exports = (sequelize, Sequelize) => {
       type: Sequelize.STRING
     },
     // DECOMMENT:
-    // filename: {
-    //   type: Sequelize.STRING
-    // }
+    filename: {
+      type: Sequelize.STRING
+    }
   });
 
   return Bicycle;

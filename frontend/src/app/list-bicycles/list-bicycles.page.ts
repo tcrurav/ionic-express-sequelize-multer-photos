@@ -28,7 +28,7 @@ export class ListBicyclesPage implements OnInit {
   }
 
   // DECOMMENT:
-  // addBicycle(){
-  //   this.router.navigateByUrl("/add-bicycle");
-  // }
+  addBicycle(){
+    this.router.navigateByUrl("/add-bicycle");
+  }
 }
