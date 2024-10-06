@@ -5,9 +5,7 @@ module.exports = app => {
   var router = require("express").Router();
 
   // Create a new Bicycle
-  // DECOMMENT:
-  // router.post("/", upload.single('file'), bicycles.create);
-  router.post("/", bicycles.create);
+  router.post("/", upload.single('file'), bicycles.create);
 
   // Retrieve all Bicycles
   router.get("/", bicycles.findAll);
