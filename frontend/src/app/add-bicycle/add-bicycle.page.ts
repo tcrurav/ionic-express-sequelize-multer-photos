@@ -19,7 +19,12 @@ export class AddBicyclePage implements OnInit {
     private bicycleService: BicycleService,
     private photoService: PhotoService,
     private router: Router
-  ) { }
+  ) { 
+    this.bicycleForm = this.formBuilder.group({
+      brand: ['', [Validators.required]],
+      model: ['', [Validators.required]]
+    })
+  }
 
   ionViewWillEnter() {
     this.bicycleForm.reset();
@@ -27,15 +32,10 @@ export class AddBicyclePage implements OnInit {
     this.capturedPhoto = "";
   }
 
-  ngOnInit() {
-    this.bicycleForm = this.formBuilder.group({
-      brand: ['', [Validators.required]],
-      model: ['', [Validators.required]]
-    })
-  }
+  ngOnInit() { }
 
-  get errorControl() {
-    return this.bicycleForm.controls;
+  getFormControl(field: string) {
+    return this.bicycleForm.get(field);
   }
 
   takePhoto() {
