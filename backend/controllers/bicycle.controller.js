@@ -16,7 +16,7 @@ exports.create = (req, res) => {
     brand: req.body.brand,
     model: req.body.model,
     // DECOMMENT: 
-    filename: req.file ? req.file.filename : ""
+    // filename: req.file ? req.file.filename : ""
   }
 
   // Save Bicycle in the database

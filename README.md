@@ -43,7 +43,7 @@ All you need is... some time and...
 ## Built With
 
 * [Visual Studio Code](https://code.visualstudio.com/) - The Editor used in this project
-* [Ionic 6](https://ionicframework.com/docs/intro) - Ionic Framework is an open source UI toolkit for building performant, high-quality mobile and desktop apps using web technologies (HTML, CSS, and JavaScript).
+* [Ionic 8](https://ionicframework.com/docs/intro) - Ionic Framework is an open source UI toolkit for building performant, high-quality mobile and desktop apps using web technologies (HTML, CSS, and JavaScript).
 
 ## Acknowledgments
 

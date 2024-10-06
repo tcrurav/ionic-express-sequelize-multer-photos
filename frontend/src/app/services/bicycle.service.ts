@@ -15,12 +15,12 @@ export class BicycleService {
   }
 
   // DECOMMENT:
-  createBicycle(bicycle: any, blob: any){
-    let formData = new FormData();
-    formData.append("brand", bicycle.brand);
-    formData.append("model", bicycle.model);
-    formData.append("file", blob);
+  // createBicycle(bicycle: any, blob: any){
+  //   let formData = new FormData();
+  //   formData.append("brand", bicycle.brand);
+  //   formData.append("model", bicycle.model);
+  //   formData.append("file", blob);
 
-    return this.httpClient.post(this.endPoint, formData);
-  }
+  //   return this.httpClient.post(this.endPoint, formData);
+  // }
 }
